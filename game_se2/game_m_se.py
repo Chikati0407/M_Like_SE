@@ -64,18 +64,18 @@ class M_like_SE():
             if (y <= self.display_height // 3):
                 pyxel.play(0,0)
             elif (self.display_height // 3 < y) and (y <= self.display_height * 2/3):
-                pyxel.play(0,1)
+                pyxel.play(1,1)
             elif (self.display_height * 2/3) < y:
-                pyxel.play(0,2)
+                pyxel.play(1,2)
             
         if pyxel.btnp(pyxel.KEY_D):
             pyxel.play(0,0)
 
         if pyxel.btnp(pyxel.KEY_C):
-            pyxel.play(0,1)
+            pyxel.play(1,1)
 
         if pyxel.btnp(pyxel.KEY_R):
-            pyxel.play(0,2)
+            pyxel.play(1,2)
 
 
     def draw(self):
@@ -97,9 +97,14 @@ class M_like_SE():
             s = "DOKAN",
             col = 2
         )
-        # writer.draw(x = 20, y = 20, text = "土管", font_size = 40, font_color = 2)
-        # if self.os_pc:
-        #     writer.draw(x = 20, y = 70, text = "D", font_size = 30, font_color = 2)
+        if self.os_pc:
+            pyxel.text(
+                x = self.padding * 2,
+                y = self.display_height / 3 - self.padding * 3,
+                s = "D",
+                col = 7,
+            )
+        
         
         pyxel.rect(
             x = self.padding, 
@@ -114,9 +119,14 @@ class M_like_SE():
             s = "COIN", 
             col = 1
         )
-        # writer.draw(x = 20, y = 130, text = "コイン", font_size = 40, font_color = 1)
-        # if self.os_pc:
-        #     writer.draw(x = 20, y = 180, text = "C", font_size = 30, font_color = 1)
+        if self.os_pc:
+            pyxel.text(
+                x = self.padding * 2,
+                y = self.display_height * 2/3 - self.padding * 3,
+                s = "C",
+                col = 7,
+            )
+        
 
         pyxel.rect(
             x = self.padding, 
@@ -131,9 +141,13 @@ class M_like_SE():
             s = "1UP", 
             col = 11
         )
-        # writer.draw(x = 20, y = 240, text = "1UP", font_size = 40, font_color = 11)
-        # if self.os_pc:
-        #     writer.draw(x = 20, y = 290, text = "R", font_size = 30, font_color = 11)
+        if self.os_pc:
+            pyxel.text(
+                x = self.padding * 2, 
+                y = self.display_height - self.padding * 3, 
+                s = "R", 
+                col = 7
+            )
 
 
         
