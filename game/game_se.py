@@ -16,7 +16,7 @@ class M_like_SE():
             "S",
             "7",
             "F",
-            
+            2
         )   # 土管の音
         pyxel.sounds[1].set(
             "b3e4e4e4e4e4e4e4",
