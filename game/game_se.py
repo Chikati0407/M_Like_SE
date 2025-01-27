@@ -10,13 +10,20 @@ class M_like_SE():
 
 
     def init_se(self):
+        # pyxel.sounds[0].set(
+        #     "e4a3d3g2c2f1e4a3d3g2c2f1b0rrrrrrrrrrrrrrrrrrrrr" * 3,
+        #     "S",
+        #     "7",
+        #     "F",
+        #     1
+        # )   # 土管の音
         pyxel.sounds[0].set(
-            "e4a3d3g2c2f1e4a3d3g2c2f1b0rrrrrrrrrrrrrrrrrrrrr" * 3,
+            "b3e4e4e4e4e4e4e4",
             "S",
             "7",
-            "F",
-            1
-        )   # 土管の音
+            "NNNNNNNF",
+            10
+        )   # コインの音
         pyxel.sounds[1].set(
             "b3e4e4e4e4e4e4e4",
             "S",
