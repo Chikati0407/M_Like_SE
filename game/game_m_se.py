@@ -34,25 +34,25 @@ class M_like_SE():
 
     def init_sound(self):
         pyxel.sounds[0].set(
-            "e4a3d3g2c2f1e4a3d3g2c2f1b0rrrrrrrrrrrrrrrrrrrrr" * 3,
-            "S",
-            "7",
-            "F",
-            1
+            notes = "e4a3d3g2c2f1e4a3d3g2c2f1b0rrrrrrrrrrrrrrrrrrrrr" * 3,
+            tones = "S",
+            volumes = "7",
+            effects = "F",
+            speed = 1
         )   # 土管
         pyxel.sounds[1].set(
-            "b3e4e4e4e4e4e4e4",
-            "S",
-            "7",
-            "NNNNNNNF",
-            10
+            notes = "b3e4e4e4e4e4e4e4",
+            tones = "S",
+            volumes = "7",
+            effects = "NNNNNNNF",
+            speed = 10
         )   # コイン
         pyxel.sounds[2].set(
-            "e3g3e4c4d4g4",
-            "S",
-            "7",
-            "NNNNNF",
-            15
+            notes = "e3g3e4c4d4g4",
+            tones = "S",
+            volumes = "7",
+            effects = "NNNNNF",
+            speed = 15
         )   # 1UP
 
     def update(self):
