@@ -4,7 +4,6 @@ class M_like_SE():
     def __init__(self):
 
         pyxel.init(width = 200, height = 355, title = "play M like SE")
-        # pyxel.load("audio.pyxres")
         self.init_se()
         pyxel.mouse(True)
         pyxel.run(self.update, self.draw)
@@ -13,7 +12,7 @@ class M_like_SE():
     def init_se(self):
         pyxel.sounds[0].set(
             "e4a3d3g2c2f1e4a3d3g2c2f1b0rrrrrrrrrrrrrrrrrrrrr" * 3,
-            "P",
+            "S",
             "7",
             "F",
             1
@@ -29,14 +28,14 @@ class M_like_SE():
             "e3g3e4c4d4g4",
             "S",
             "7",
-            "N",
+            "NNNNNF",
             15
         )
 
     def update(self):
-        if pyxel.btnp(pyxel.MOUSE_BUTTON_LEFT):
+        if pyxel.btnp(pyxel.MOUSE_BUTTON_LEFT) or pyxel.btnp(pyxel.KEY_SPACE):
             pyxel.play(0,0)
-
+            
         if pyxel.btnp(pyxel.KEY_Q):
             pyxel.play(0,1)
 
