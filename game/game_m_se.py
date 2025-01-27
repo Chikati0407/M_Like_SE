@@ -103,14 +103,14 @@ class M_like_SE():
         
         pyxel.rect(
             x = self.padding, 
-            y = self.block_height + self.padding * 2, 
+            y = self.display_height / 3 + self.padding, 
             w = self.block_width, 
             h = self.block_height, 
             col = 10
         )
         pyxel.text(
             x = self.padding * 2, 
-            y = self.block_height + self.padding * 3, 
+            y = self.display_height / 3 + self.padding * 2, 
             s = "COIN", 
             col = 1
         )
@@ -120,14 +120,14 @@ class M_like_SE():
 
         pyxel.rect(
             x = self.padding, 
-            y = self.block_height * 2 + self.padding * 3, 
+            y = self.display_height * 2/3 + self.padding, 
             w = self.block_width, 
             h = self.block_height, 
             col = 2
         )
         pyxel.text(
             x = self.padding * 2, 
-            y = self.block_height * 2 + self.padding * 4, 
+            y = self.display_height * 2/3 + self.padding * 2, 
             s = "1UP", 
             col = 11
         )
